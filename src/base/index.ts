@@ -559,7 +559,7 @@ export abstract class PaginationEmbed<Element> extends EventEmitter {
           await response.users.remove(user);
       }
 
-      switch (emoji[0] || emoji[1]) {
+      switch (emoji[1] || emoji[0]) {
         case this.navigationEmojis.back:
           if (this.page === 1) return this._awaitResponse();
 

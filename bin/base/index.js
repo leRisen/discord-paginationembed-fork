@@ -177,7 +177,7 @@ class e extends t.EventEmitter {
       if (this.listenerCount("react") && this.emit("react", n, t.emoji), s.guild) {
         e.permissionsFor(e.client.user).missing([ "MANAGE_MESSAGES" ]).length || await t.users.remove(n);
       }
-      switch (a[0] || a[1]) {
+      switch (a[1] || a[0]) {
        case this.navigationEmojis.back:
         return 1 === this.page ? this._awaitResponse() : this._loadPage("back");
 
